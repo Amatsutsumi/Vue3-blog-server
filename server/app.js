@@ -8,7 +8,7 @@ const port = 8080
 
 //设置跨域
 app.use(function (req, res, next) {
-    res.set('Access-Control-Allow-Original', '*')
+    res.set('Access-Control-Allow-Origin', '*')
     res.set('Access-Control-Allow-Headers', '*')
     res.set('Access-Control-Allow-Methods', 'DELETE,PUT,GET,POST,OPTIONS')
     if (req.method == 'OPTIONS') res.sendStatus(200)
